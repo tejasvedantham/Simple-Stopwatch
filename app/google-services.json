@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "1091897295660",
+    "firebase_url": "https://stopwatch-667dc.firebaseio.com",
+    "project_id": "stopwatch-667dc",
+    "storage_bucket": "stopwatch-667dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091897295660:android:34fc2874cea7a374",
+        "android_client_info": {
+          "package_name": "com.stopwatch.tejas.stopwatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091897295660-kekpd6n643johsglmg6eu48nvndkfdai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stopwatch.tejas.stopwatch",
+            "certificate_hash": "d59acec356c53c8114761dc2fa5d640b1dae506f"
+          }
+        },
+        {
+          "client_id": "1091897295660-1d21dehibj5ekohctjbe997956vr06h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD022wQd3oSZueAXXJ3SPMHlJ_FkhpENYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

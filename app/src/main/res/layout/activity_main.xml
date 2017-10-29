@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#FF021638"
+    tools:context="com.stopwatch.tejas.stopwatch.MainActivity"
+
+    android:id="@+id/activity_main">
+
+
+    <Chronometer
+        android:id="@+id/chrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:textSize="70dp"
+        android:background="@drawable/chronbackground"
+
+
+        />
+
+    <TextView
+        android:id="@+id/lap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chrono"
+        android:text="Lap 1:    "
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:id="@+id/lap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lap1"
+        android:text="Lap 2:    "
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:id="@+id/lap3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lap2"
+        android:text="Lap 3:    "
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+
+        />
+    <Button
+        android:id="@+id/lap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/chrono"
+        android:background="@null"
+        android:text="Lap"
+        android:textColor="#FFFFFF"
+        android:onClick="lapTimer"
+        android:padding="10dp"
+        android:textSize="15sp"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9846896169369686/3699485453">
+
+
+    </com.google.android.gms.ads.AdView>
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="startTimer"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="stopTimer"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:layout_toLeftOf="@+id/start" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="30dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="resetTimer"
+        android:background="@null"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@+id/start" />
+
+</RelativeLayout>
